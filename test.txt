@@ -1,0 +1,66 @@
+Test 1:
+
+let seats = [
+  { number: 1, type: 'R', reserved: false },
+  { number: 2, type: 'R', reserved: false },
+  { number: 3, type: 'R', reserved: false },
+  { number: 4, type: 'RD', reserved: false },
+  { number: 5, type: 'RD', reserved: false },
+  { number: 6, type: 'R', reserved: false },
+];
+
+let request = ['R', 'R', 'R', 'R'];
+
+----------------------------------------------------
+
+Test 2:
+
+let seats = [
+  { number: 9, type: 'D', reserved: false },
+  { number: 12, type: 'RD', reserved: false },
+  { number: 18, type: 'R', reserved: false },
+  { number: 32, type: 'DS', reserved: false },
+  { number: 40, type: 'S', reserved: false },
+];
+
+let request = ['D', 'D', 'R', 'R'];
+
+-----------------------------------------------------
+
+Test 3:
+
+let seats = [
+  { number: 7, type: 'R', reserved: false },
+  { number: 15, type: 'LFC', reserved: false },
+  { number: 44, type: 'LS', reserved: false },
+];
+
+let request = ['L', 'S'];
+
+-----------------------------------------------------
+
+Test 4:
+
+let seats = [
+  { number: 3, type: 'FL', reserved: false },
+  { number: 8, type: 'FQ', reserved: false },
+  { number: 14, type: 'G', reserved: false },
+];
+
+let request = ['F', 'G', 'G'];
+
+------------------------------------------------------
+
+Test 5: (additional)
+
+let seats = [
+  { number: 9, type: 'D', reserved: false },
+  { number: 12, type: 'RD', reserved: false },
+  { number: 18, type: 'R', reserved: false },
+  { number: 32, type: 'DS', reserved: false },
+  { number: 40, type: 'S', reserved: false },
+  { number: 60, type: 'S', reserved: false },
+  { number: 82, type: 'SR', reserved: false },
+];
+
+let request = ['D', 'D', 'R', 'R', 'R'];
